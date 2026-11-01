@@ -52,7 +52,7 @@ dependencies = [
 llm = [
     "anthropic>=0.83.0",
     "boto3>=1.34.0",
-    "litellm>=1.92.0,<1.94.0.dev0",
+    "litellm>=1.100.4,<1.101.0",
     "openai>=2.21.0",
 ]
 # Tier 2 intra-skill deduplication and local-catalog inter-skill similarity.
@@ -64,7 +64,7 @@ tier3 = [
     "skillevaluator[llm]",
     "harbor[gke]==0.24.0",
     # CVE-2026-59950, CVE-2026-52870, and CVE-2026-52869 fixed floor.
-    "mcp>=1.28.1,<2",
+    "mcp>=1.30.0,<2",
     # CVE-2026-48522 through CVE-2026-48526 fixed floor.
     "pyjwt[crypto]>=2.13.0",
     # GHSA-hj66-6f7g-4r5v and GHSA-xpv3-w29h-x7cv fixed floor (via harbor[gke]).
